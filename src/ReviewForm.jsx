@@ -22,7 +22,7 @@ const ReviewForm = () => {
         <form>
             <input value={title} onChange={ handleTitleChange}></input>
             <input type='number' value={rating} onChange={handleRatingChange} />
-            <textarea value={content} onChange={handleContentChange} />
+            <textarea value={content} onChange={handleContentChange} /> 
         </form>
     );
 };
