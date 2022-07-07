@@ -18,12 +18,24 @@ const ReviewForm = () => {
         setContent(e.target.value);
     };
 
+    const handleSubmit = (e) => {
+        e.preventDefult();
+        console.log({
+            title,
+            rating,
+            content,
+        });
+    };
+
     return (
-        <form>
-            <input value={title} onChange={ handleTitleChange}></input>
-            <input type='number' value={rating} onChange={handleRatingChange} />
-            <textarea value={content} onChange={handleContentChange} />
-        </form>
+        
+            <div onSubmit={handleSubmit}>
+                <input value={title} onChange={ handleTitleChange}></input>
+                <input type='number' value={rating} onChange={handleRatingChange} />
+                <textarea value={content} onChange={handleContentChange} />
+                <button type='submit'>확인</button>
+            </div>
+    
     );
 };
 
