@@ -1,9 +1,10 @@
 import React from 'react';
 
+
 const ReviewList = () => {
     return (
         <div>
-            하이하이
+             식당평가
         </div>
     );
 };
